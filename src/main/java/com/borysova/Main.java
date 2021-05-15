@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         H2Omol h2o = new H2Omol();
-        int n = 2;
+        int n = 10;
 
         new Thread(() -> {
             try {

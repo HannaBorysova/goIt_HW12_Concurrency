@@ -8,9 +8,6 @@ public class H2Omol {
     private Semaphore semaphore1 = new Semaphore(0);
     private Semaphore semaphore2 = new Semaphore(0);
 
-    public H2Omol() {
-    }
-
     public void hydrogen(Runnable releaseHydrogen) throws InterruptedException {
         semaphoreH.acquire();
         semaphore1.release();
